@@ -1,7 +1,7 @@
 ---
 name: "get_attachments"
 runner_type: "python-script"
-description: "Gets all attachments for table"
+description: "Gets meta-data for all attachments for specified table"
 enabled: true
 entry_point: "get_attachments.py"
 parameters:
