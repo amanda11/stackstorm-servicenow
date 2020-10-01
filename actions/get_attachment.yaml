@@ -1,5 +1,5 @@
 ---
-name: "get_attachments"
+name: "get_attachment"
 runner_type: "python-script"
 description: "Get an attachment"
 enabled: true
