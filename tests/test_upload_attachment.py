@@ -29,8 +29,6 @@ class UploadAttachmentActionTestCase(ServiceNowBaseActionTestCase):
 
     @mock.patch('pysnow.Client')
     def test_add_attachment(self, mock_client):
-        attrs = {'query.return_value': mock_lr}
-        mock_client.configure_mock(**attrs)
         action = self.get_action_instance(self.full_config)
         result = action.run('table1','file1','sysid1')
         mock_client.return_value.query.assert_called_with(table="table1", query={'sys_id': "sysid1"})
